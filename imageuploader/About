@@ -1,0 +1,41 @@
+"""
+- create project
+- start app
+- create model
+    use field:
+        photo upload_to='myimage' upload in this folder(install pillow library)
+        date
+- makemigration 
+- migrate
+- create admin
+
+we are able to upload the image , but when we click we get error
+
+# to access it 
+from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+
+print(static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+)
+
+"""
+
+
+# Now if you want to define the root for every media file
+# - go to settings.py 
+
+# MEDIA_ROOT = BASE_DIR / 'media' (new folder will create in base DIR/'myimage' 
+
+# normally we get the URL like this  
+# http://127.0.0.1:8000/myimage/images.jpg
+# If you want to give paricular URL than 
+# go to settings.py
+# MEDIA_URL = '/media/'
+# Now: http://127.0.0.1:8000/media/myimage/images.jpg
+
+
+# Now let's use this concept to build our image uploader project 
