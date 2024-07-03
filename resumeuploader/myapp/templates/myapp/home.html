@@ -32,8 +32,8 @@
             </div>
             <div class="col-sm-4">
                 <h4 class="text-center mb-4"><u>List of Candidates</u></h4>
-                {% for candidates in candidates %}
-                    {{candidates.id}} : <a href="{% url 'candidate' candidate.id %}">{{candidates.name}}</a>
+                {% for candidate in candidates %}
+                    {{candidate.id}} : <a href="{% url 'candidate' candidate.id %}">{{candidate.name}}</a>
                     <hr>
                 {% endfor %}
             </div>

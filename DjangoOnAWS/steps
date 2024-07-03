@@ -1,0 +1,22 @@
+- login to AWS
+- launch one Instance (Ubuntu)
+- login to instance 
+- add inbound rule : http, tcp, ssh, 
+- access instance using putty, gitbash
+
+- sudo apt-update
+- install/update python
+- install nginex , curl 
+ 
+- clone your github project to particular directry
+- create virtual env. 
+- activate env
+- install all requirements 
+
+- python manage.py runserver
+
+if we get any error in code ,we have to again start our sever 
+python manage.py runserver
+
+
+

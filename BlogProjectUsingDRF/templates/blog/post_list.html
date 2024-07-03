@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{%extends 'blog/base.html'%}
+{% block title_block%} ADITYA's BLOG HOME PAGE {%endblock%}
+
+
+{%block content%}
+    <h1>All published Social Media Posts</h1>
+
+    {% for post in post_list%}
+    
+        <a href=""><h2>{{post.title}}</h2></a>
+        <p>published on {{post.publish}} by {{post.author}}</p>
+    {%endfor%}
+{%endblock%}

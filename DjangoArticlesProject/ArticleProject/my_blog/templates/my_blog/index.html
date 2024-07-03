@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %} 
+{% load static %}
+
+{% block title %} 
+My Blog 
+{% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "my_blog/index.css" %}" />
+{% endblock %}
+
+{% block content %}
+<div class="wrap">
+    <div class="content">
+        <section id="latest-posts">
+            <h2>Latest Blogs</h2>
+            <ul>
+                post 1
+            </ul>
+            <ul>
+                post 1
+            </ul>
+            <ul>
+                post 1
+            </ul>
+        </section>
+    </div><!-- .content -->
+
+    <div class="sidebar">
+        <section id="welcome">
+            <header>
+              <img class="box" src="{% static "my_blog/img/profile.png" %}"/>
+              <h2>Vijay Manral</h2>
+            </header>
+            <p>Hello Friends welcome To Csgeeks Blog</p>
+          </section>
+    </div><!-- .sidebar -->
+    <div class="clear"></div>
+</div><!-- .wrap -->
+{% endblock %}
